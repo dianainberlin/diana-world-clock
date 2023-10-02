@@ -8,13 +8,24 @@ body {
 }
 
 .card {
+  border-radius: 50px;
+  background: #edf1f4;
+  box-shadow: 20px 20px 28px rgba(13, 39, 80, 0.18), -20px -20px 28px #ffffff;
+  border: none;
   display: block;
   margin: 5px auto;
+  color: #6a6975;
 }
 
 header ul {
   list-style: none;
   text-align: left;
+  padding-left: 0;
+  margin: 10px 20px;
+}
+
+.city-time {
+  margin: 10px 20px;
   padding-left: 0;
 }
 
