@@ -1,5 +1,6 @@
 body {
   background: #edf1f4;
+  font-family: Gabarito;
 }
 
 .container {
@@ -8,12 +9,12 @@ body {
 }
 
 .card {
-  border-radius: 50px;
+  border-radius: 20px;
   background: #edf1f4;
-  box-shadow: 20px 20px 28px rgba(13, 39, 80, 0.18), -20px -20px 28px #ffffff;
+  box-shadow: 20px 20px 24px rgba(13, 39, 80, 0.18), -20px -20px 20px #ffffff;
   border: none;
   display: block;
-  margin: 5px auto;
+  margin: 20px auto;
   color: #6a6975;
 }
 
@@ -21,12 +22,16 @@ header ul {
   list-style: none;
   text-align: left;
   padding-left: 0;
-  margin: 10px 20px;
+  margin: 20px 40px;
 }
 
-.city-time {
-  margin: 10px 20px;
-  padding-left: 0;
+.city-timezone {
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.city-timezone .am-pm {
+  font-size: 18px;
 }
 
 footer ul {
