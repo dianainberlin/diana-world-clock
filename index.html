@@ -13,16 +13,40 @@
     <title>World Clock</title>
   </head>
   <body>
-    <h1>World Clock</h1>
-    <footer>
-      coded by
-      <a href="https://www.linkedin.com/in/diana-decastro/" target="_blank"
-        >Diana</a
-      ><br /><a
-        href="https://github.com/dianainberlin?tab=repositories"
-        target="_blank"
-        >GitHub</a
-      >
+    <header class="container">
+      <h1>World Clock</h1>
+      <form action="/go">
+        <select name="selec-city" id="select-city">
+          <option value="">Select a city</option>
+          <option value="current-location">Select current location</option>
+          <option value="berlin">Berlin</option>
+          <option value="new-york">New York</option>
+          <option value="london">London</option>
+          <option value="manila">Manila</option>
+        </select>
+      </form>
+      <ul class="card w-50 mb-3">
+        <li>Berlin</li>
+        <li>Oct 2</li>
+        <li>23:32</li>
+      </ul>
+    </header>
+    <footer class="container">
+      <ul>
+        <li>
+          Open-source code by
+          <a href="https://www.linkedin.com/in/diana-decastro/" target="_blank"
+            >Diana</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/dianainberlin?tab=repositories"
+            target="_blank"
+            >GitHub</a
+          >
+        </li>
+      </ul>
     </footer>
     <script src="javascript/index.js"></script>
   </body>
