@@ -22,47 +22,59 @@
   </head>
   <body>
     <header class="container">
-      <h1 class="display-1">World Clock</h1>
-      <form action="/go">
-        <select name="selec-city" id="select-city">
-          <option value="">Select a city</option>
-          <option value="current-location">Select current location</option>
-          <option value="berlin">Berlin</option>
-          <option value="new-york">New York</option>
-          <option value="london">London</option>
-          <option value="manila">Manila</option>
-        </select>
-      </form>
-      <div class="card w-50 mb-3">
+      <div class="card header-card w-50 mb-3">
+        <h1 class="display-5">World Clock</h1>
+        <div class="card form-card w-100 mb-3" action="/go">
+          <select name="selec-city" id="select-city">
+            <option value="">Select a city</option>
+            <option value="current-location">Select current location</option>
+            <option value="berlin">Berlin</option>
+            <option value="new-york">New York</option>
+            <option value="london">London</option>
+            <option value="manila">Manila</option>
+          </select>
+        </div>
+      </div>
+      <div class="card timezone-card w-50 mb-3">
         <div class="row">
           <div class="col-sm">
             <ul>
-              <li class="city-name"><h1 class="display-6">Berlin</h1></li>
+              <li class="city-name"><p class="h3">Berlin</p></li>
               <li class="city-date">Oct 2</li>
             </ul>
           </div>
           <div class="col-sm city-timezone">
-            <h1 class="display-3">23:32:00 <span class="am-pm">PM</span></h1>
+            <h1 class="display-4">23:32:00</h1>
+          </div>
+        </div>
+      </div>
+      <div class="card timezone-card w-50 mb-3">
+        <div class="row">
+          <div class="col-sm">
+            <ul>
+              <li class="city-name"><p class="h3">Manila</p></li>
+              <li class="city-date">Oct 2</li>
+            </ul>
+          </div>
+          <div class="col-sm city-timezone">
+            <h1 class="display-4">23:32:00</h1>
           </div>
         </div>
       </div>
     </header>
     <footer class="container">
-      <ul>
-        <li>
-          Open-source code by
-          <a href="https://www.linkedin.com/in/diana-decastro/" target="_blank"
-            >Diana</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://github.com/dianainberlin?tab=repositories"
-            target="_blank"
-            >GitHub</a
-          >
-        </li>
-      </ul>
+      <p>
+        Coded by
+        <a href="https://www.linkedin.com/in/diana-decastro/" target="_blank"
+          >Diana</a
+        >
+        and open-sourced on
+        <a
+          href="https://github.com/dianainberlin?tab=repositories"
+          target="_blank"
+          >GitHub</a
+        >
+      </p>
     </footer>
     <script src="javascript/index.js"></script>
   </body>
