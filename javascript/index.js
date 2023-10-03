@@ -1,7 +1,9 @@
 function showTimeZone() {
   let berlinTimeElement = document.querySelector("#berlinTime");
   let berlinTime = moment().tz("Europe/Berlin");
-  berlinTimeElement.innerHTML = berlinTime.format("HH:mm:ss");
+  berlinTimeElement.innerHTML = berlinTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 
   let berlinDateElement = document.querySelector("#berlinDate");
   let berlinDate = moment().tz("Europe/Berlin");
@@ -9,7 +11,9 @@ function showTimeZone() {
 
   let newYorkTimeElement = document.querySelector("#newYorkTime");
   let newYorkTime = moment().tz("America/New_York");
-  newYorkTimeElement.innerHTML = newYorkTime.format("HH:mm:ss");
+  newYorkTimeElement.innerHTML = newYorkTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 
   let newYorkDateElement = document.querySelector("#newYorkDate");
   let newYorkDate = moment().tz("America/New_York");
@@ -17,7 +21,9 @@ function showTimeZone() {
 
   let londonTimeElement = document.querySelector("#londonTime");
   let londonTime = moment().tz("Europe/London");
-  londonTimeElement.innerHTML = londonTime.format("HH:mm:ss");
+  londonTimeElement.innerHTML = londonTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 
   let londonDateElement = document.querySelector("#londonDate");
   let londonDate = moment().tz("Europe/London");
@@ -25,7 +31,9 @@ function showTimeZone() {
 
   let hongKongTimeElement = document.querySelector("#hongKongTime");
   let hongKongTime = moment().tz("Asia/Hong_Kong");
-  hongKongTimeElement.innerHTML = hongKongTime.format("HH:mm:ss");
+  hongKongTimeElement.innerHTML = hongKongTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 
   let hongKongDateElement = document.querySelector("#hongKongDate");
   let hongKongDate = moment().tz("Asia/Hong_Kong");
@@ -39,7 +47,9 @@ function displayCityData(event) {
   }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityDate = moment().tz(cityTimeZone).format("dddd, MMM DD");
-  let cityTime = moment().tz(cityTimeZone).format("HH:mm:ss");
+  let cityTime = moment()
+    .tz(cityTimeZone)
+    .format("h:mm:ss [<small>]A[</small>]");
   let displayCityElement = document.querySelector("#citiesDisplayed");
   displayCityElement.innerHTML = `<div class="card timezone-card w-75 mb-3">
           <div class="row">

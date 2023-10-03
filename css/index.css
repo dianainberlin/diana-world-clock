@@ -48,6 +48,10 @@ header ul {
   margin: 20px 40px;
 }
 
+small {
+  font-size: 20px;
+}
+
 .city-timezone {
   margin-top: 20px;
   margin-bottom: 20px;
