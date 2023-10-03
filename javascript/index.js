@@ -34,6 +34,9 @@ function showTimeZone() {
 
 function displayCityData(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current-location") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityDate = moment().tz(cityTimeZone).format("dddd, MMM DD");
   let cityTime = moment().tz(cityTimeZone).format("HH:mm:ss");
