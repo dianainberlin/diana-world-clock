@@ -27,6 +27,7 @@ body {
 }
 
 .form-card {
+  background: transparent;
   border: none;
 }
 
@@ -85,4 +86,32 @@ footer {
 footer li,
 footer a {
   color: #9f9ea1;
+}
+
+/* ------ Dark ------ */
+
+.dark {
+  background: #292d32;
+}
+
+.dark .header-card h1 {
+  color: #9f9ea1;
+}
+
+.dark select {
+  background: #292d32;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #9f9ea1;
+  padding: 5px 10px;
+}
+
+.dark .timezone-card {
+  border-radius: 20px;
+  background: #292d32;
+  box-shadow: 20px 20px 50px #1c1919, -20px -20px 50px rgba(255, 255, 255, 0.1);
+  border: none;
 }

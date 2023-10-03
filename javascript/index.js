@@ -40,6 +40,18 @@ function showTimeZone() {
   hongKongDateElement.innerHTML = hongKongDate.format("dddd, MMM DD");
 }
 
+function changeTheme(cityAmPm) {
+  if (cityAmPm === "PM") {
+    let body = document.querySelector("body");
+    body.classList.add("dark");
+  }
+
+  if (cityAmPm === "AM") {
+    let body = document.querySelector("body");
+    body.classList.remove("dark");
+  }
+}
+
 function handleSelectedCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current-location") {
@@ -47,9 +59,8 @@ function handleSelectedCity(event) {
   }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityDate = moment().tz(cityTimeZone).format("dddd, MMM DD");
-  let cityTime = moment()
-    .tz(cityTimeZone)
-    .format("h:mm:ss [<small>]A[</small>]");
+  let cityTime = moment().tz(cityTimeZone).format("h:mm:ss");
+  let cityAmPm = moment().tz(cityTimeZone).format("A");
   let displayCityElement = document.querySelector("#citiesDisplayed");
   displayCityElement.innerHTML = `<div class="card timezone-card w-75 mb-3">
           <div class="row">
@@ -60,10 +71,12 @@ function handleSelectedCity(event) {
               </ul>
             </div>
             <div class="col-sm city-timezone">
-              <h1 class="display-4">${cityTime}</h1>
+              <h1 class="display-4">${cityTime} <small>${cityAmPm}</small></h1>
             </div>
           </div>
         </div>`;
+
+  changeTheme(cityAmPm);
 }
 
 setInterval(showTimeZone, 1);
