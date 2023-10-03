@@ -30,62 +30,66 @@
           <select name="selec-city" id="select-city">
             <option value="">Select a city</option>
             <option value="current-location">Select current location</option>
-            <option value="berlin">Berlin</option>
-            <option value="new-york">New York</option>
-            <option value="london">London</option>
-            <option value="manila">Manila</option>
+            <option value="Europe/Berlin">Berlin</option>
+            <option value="America/New_York">New York</option>
+            <option value="Europe/London">London</option>
+            <option value="Asia/Hong_Kong">Hong Kong</option>
+            <option value="America/Chicago">Chicago</option>
+            <option value="Asia/Manila">Manila</option>
           </select>
         </div>
       </div>
-      <div class="card timezone-card w-75 mb-3">
-        <div class="row">
-          <div class="col-sm">
-            <ul>
-              <li class="city-name"><p class="h3">Berlin</p></li>
-              <li class="city-date" id="berlinDate">Oct 2</li>
-            </ul>
-          </div>
-          <div class="col-sm city-timezone">
-            <h1 class="display-4" id="berlinTime">23:32:00</h1>
-          </div>
-        </div>
-      </div>
-      <div class="card timezone-card w-75 mb-3">
-        <div class="row">
-          <div class="col-sm">
-            <ul>
-              <li class="city-name"><p class="h3">New York</p></li>
-              <li class="city-date" id="newYorkDate">Oct 2</li>
-            </ul>
-          </div>
-          <div class="col-sm city-timezone">
-            <h1 class="display-4" id="newYorkTime">23:32:00</h1>
+      <div id="citiesDisplayed">
+        <div class="card timezone-card w-75 mb-3" id="berlin">
+          <div class="row">
+            <div class="col-sm">
+              <ul>
+                <li class="city-name"><p class="h3">Berlin</p></li>
+                <li class="city-date" id="berlinDate">Oct 2</li>
+              </ul>
+            </div>
+            <div class="col-sm city-timezone">
+              <h1 class="display-4" id="berlinTime">23:32:00</h1>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card timezone-card w-75 mb-3">
-        <div class="row">
-          <div class="col-sm">
-            <ul>
-              <li class="city-name"><p class="h3">London</p></li>
-              <li class="city-date" id="londonDate">Oct 2</li>
-            </ul>
-          </div>
-          <div class="col-sm city-timezone">
-            <h1 class="display-4" id="londonTime">23:32:00</h1>
+        <div class="card timezone-card w-75 mb-3">
+          <div class="row">
+            <div class="col-sm">
+              <ul>
+                <li class="city-name"><p class="h3">New York</p></li>
+                <li class="city-date" id="newYorkDate">Oct 2</li>
+              </ul>
+            </div>
+            <div class="col-sm city-timezone">
+              <h1 class="display-4" id="newYorkTime">23:32:00</h1>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card timezone-card w-75 mb-3">
-        <div class="row">
-          <div class="col-sm">
-            <ul>
-              <li class="city-name"><p class="h3">Hong Kong</p></li>
-              <li class="city-date" id="hongKongDate">Oct 2</li>
-            </ul>
+        <div class="card timezone-card w-75 mb-3">
+          <div class="row">
+            <div class="col-sm">
+              <ul>
+                <li class="city-name"><p class="h3">London</p></li>
+                <li class="city-date" id="londonDate">Oct 2</li>
+              </ul>
+            </div>
+            <div class="col-sm city-timezone">
+              <h1 class="display-4" id="londonTime">23:32:00</h1>
+            </div>
           </div>
-          <div class="col-sm city-timezone">
-            <h1 class="display-4" id="hongKongTime">23:32:00</h1>
+        </div>
+        <div class="card timezone-card w-75 mb-3">
+          <div class="row">
+            <div class="col-sm">
+              <ul>
+                <li class="city-name"><p class="h3">Hong Kong</p></li>
+                <li class="city-date" id="hongKongDate">Oct 2</li>
+              </ul>
+            </div>
+            <div class="col-sm city-timezone">
+              <h1 class="display-4" id="hongKongTime">23:32:00</h1>
+            </div>
           </div>
         </div>
       </div>
