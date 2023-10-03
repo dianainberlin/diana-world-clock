@@ -20,12 +20,25 @@
     <link rel="stylesheet" href="css/index.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0db34da5de.js"
+      crossorigin="anonymous"
+    ></script>
     <title>World Clock</title>
   </head>
   <body>
     <header class="container">
       <div class="card header-card w-75 mb-3">
-        <h1 class="display-5">World Clock</h1>
+        <div class="row">
+          <div class="col-sm">
+            <h1 class="display-5">World Clock</h1>
+          </div>
+          <div class="col-sm-1 menu">
+            <a href="/"
+              ><i class="fa-solid fa-list-ul fa-xl" style="color: #9f9ea1"></i
+            ></a>
+          </div>
+        </div>
         <div class="card form-card w-100 mb-3" action="/go">
           <select name="selec-city" id="select-city">
             <option value="">Select a city</option>
@@ -36,8 +49,6 @@
             <option value="Asia/Hong_Kong">Hong Kong</option>
             <option value="America/Chicago">Chicago</option>
             <option value="Asia/Manila">Manila</option>
-            <option value="">----------</option>
-            <option value=""><a href="/">Display Favorite Cities</a></option>
           </select>
         </div>
       </div>
@@ -97,18 +108,31 @@
       </div>
     </header>
     <footer class="container">
-      <p>
-        Coded by
-        <a href="https://www.linkedin.com/in/diana-decastro/" target="_blank"
-          >Diana</a
-        >
-        and open-sourced on
-        <a
-          href="https://github.com/dianainberlin?tab=repositories"
-          target="_blank"
-          >GitHub</a
-        >
-      </p>
+      <ul>
+        <li>
+          Coded by
+          <a href="https://www.linkedin.com/in/diana-decastro/" target="_blank"
+            >Diana</a
+          >
+          and open-sourced on
+          <a
+            href="https://github.com/dianainberlin?tab=repositories"
+            target="_blank"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/dianainberlin" target="_blank"
+            ><i class="fa-brands fa-github" style="color: #9f9ea1"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/diana-decastro/" target="_blank"
+            ><i class="fa-brands fa-linkedin" style="color: #9f9ea1"></i
+          ></a>
+          <a href="https://www.instagram.com/dianadecastro/" target="_blank"
+            ><i class="fa-brands fa-instagram" style="color: #9f9ea1"></i
+          ></a>
+        </li>
+      </ul>
     </footer>
     <script src="javascript/index.js"></script>
   </body>

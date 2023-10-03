@@ -40,7 +40,7 @@ function showTimeZone() {
   hongKongDateElement.innerHTML = hongKongDate.format("dddd, MMM DD");
 }
 
-function displayCityData(event) {
+function handleSelectedCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current-location") {
     cityTimeZone = moment.tz.guess();
@@ -69,4 +69,4 @@ function displayCityData(event) {
 setInterval(showTimeZone, 1);
 
 let selectCity = document.querySelector("#select-city");
-selectCity.addEventListener("change", displayCityData);
+selectCity.addEventListener("change", handleSelectedCity);

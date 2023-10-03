@@ -13,7 +13,15 @@ body {
   border: none;
   display: block;
   margin: 40px auto;
+}
+
+.header-card h1 {
   text-align: left;
+}
+
+.header-card .menu {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .form-card {
@@ -72,6 +80,7 @@ footer {
   text-align: center;
 }
 
-footer p {
+footer li,
+footer a {
   color: #9f9ea1;
 }
