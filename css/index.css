@@ -19,9 +19,11 @@ body {
   text-align: left;
 }
 
-.header-card .menu {
+.menu {
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .form-card {
